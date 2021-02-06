@@ -9,6 +9,9 @@ fun main() {
     IfTest4()
     println("\nIfTest5")
     IfTest5()
+    println("\nIfTest6")
+    IfTest6()
+
 }
 
 fun IfTest1() {
@@ -80,5 +83,15 @@ fun IfTest5(){
         27
     }
     println("$x")
+}
+
+fun IfTest6(){
+    var x:Int
+    x = if(10<20){
+        10
+    }else{
+        20
+    }
+    println("x값은 $x")
 }
 
