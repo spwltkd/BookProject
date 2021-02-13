@@ -24,6 +24,7 @@ fun IfTest1() {
         x = 10
     }
     println("$x")
+    println("$x")
 }
 
 fun IfTest2() {
