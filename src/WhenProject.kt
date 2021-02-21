@@ -4,6 +4,13 @@ fun main() {
     whenCording2(11)
     whenCording3(3)
     whenCording4(5)
+    println("\nwhenCording5 3가지 테스트")
+    println("사용자 정의 오브젝트와 반복문 사용")
+    whenCording5(ob(2,true,500))
+    whenCording5(ob(12,false,800))
+    whenCording5(ob(2,false,500))
+    println("try-catch 기본 사용")
+
 }
 
 fun whenCording1(x: Int) {
@@ -74,6 +81,20 @@ fun whenCording4(x: Int){
         }
         else -> {
             println("$y needs to be executed")
+        }
+    }
+}
+
+fun whenCording5(x:ob){
+    when(x){
+        ob(2,true,500)->{
+            println("equals correct object")
+        }
+        ob(12,false,800)->{
+            println("equals wrong object")
+        }
+        else->{
+            println("do not match any object")
         }
     }
 }
